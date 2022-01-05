@@ -2,6 +2,7 @@
 Console.WriteLine("Hello, World!");
 MyNamespace.Program.CaesarCypherEncryptor("xyz", 2);
 MyNamespace.Program.extra();
+MyNamespace.Program.dubleextra('a');
 
 
 namespace MyNamespace
@@ -42,9 +43,14 @@ namespace MyNamespace
             string ss = CaesarCypherEncryptor("abc", 2);
         }
 
-        public static void dubleextra()
+        public static void dubleextra(char a)
         {
             Console.WriteLine(" Inside !! ");
+           
+            int res = a + 2;
+            Console.WriteLine(res + " ## ");
+            Console.WriteLine();
+            
         }
     }
 
